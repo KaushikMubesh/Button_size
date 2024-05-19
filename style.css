@@ -1,0 +1,135 @@
+
+#o2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#container{
+text-align: center;
+width: 600px;
+height: 320px;
+background: linear-gradient(to right,rgb(146, 52, 114),rgb(137, 43, 151));
+box-shadow: 0 0 40px pink;
+padding-top: 30px;
+border-radius: 10%;
+animation: glow-animation 1s infinite alternate;
+
+}
+#ques{
+    color:rgb(96, 10, 10);
+    font-style: italic;
+}
+#ans{
+    padding-top: 0px;
+}
+#top{
+    padding-right: 80px;
+    padding-left: 180px;
+    opacity: 0;
+}
+#hi{
+    border: solid 1px black;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(to right,rgb(146, 52, 114),rgb(137, 43, 151));
+    text-align: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+}
+#word{
+    position: relative;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+#sub{
+    border: solid 1px black;
+    width: 120px;
+    height: 80px;
+    background: linear-gradient(to right,rgb(146, 52, 114),rgb(137, 43, 151));
+    text-align: center;
+    justify-content: center;
+    border-radius: 30%;
+    position: absolute;
+    transform: rotate(135deg);
+    opacity: 0;   
+    
+}
+#word1{
+    position: relative;
+    margin-top: 17px;
+    margin-left: 2px;
+    background: linear-gradient(to right, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: rotate(-35deg);
+    animation: blink 1s linear infinite;
+    display: none;
+
+}
+#subar{
+    padding-right: 80px;
+    padding-left: 180px;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+#overall{
+height: 1000px;
+width: 1600px;
+background: linear-gradient(to right,rgb(29, 0, 56),rgb(51, 0, 47));
+}
+#top{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 200px;
+    padding-left:0px;
+}
+#but{
+    margin-left: 530px;
+    padding-top: 120px;
+
+}
+#positive{
+    height: 100px;
+    width: 150px;
+    background-color: green;
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+    border-radius: 20%;
+    position: sticky;
+}
+#negative{
+    margin-left: 190px;
+    height: 100px;
+    width: 150px;
+    background-color: red;
+    font-size: large;
+    border-radius: 20%;
+    font-style: italic;
+    font-weight: bold;
+}
+#ans{
+    font-size: 26px;
+    font-family: cursive;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes glow-animation {
+    0% {
+      box-shadow: 0 0 20px #ff0000; /* Initial glow */
+    }
+    100% {
+      box-shadow: 0 0 50px green; /* Increased glow */
+    }
+}
